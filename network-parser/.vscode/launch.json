@@ -1,0 +1,52 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "GraphMLGenerator with Args",
+            "request": "launch",
+            "mainClass": "simengh.spotify_network_parser.GraphMLGenerator",
+            "projectName": "network-parser",
+            "args": [
+                "-d", "${input:dataDirectory}",
+                "-s", "${input:startIndex}",
+                "-e", "${input:endIndex}",
+                "-o", "${input:outputPath}",
+                "-t", "${input:nodeType}"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "dataDirectory",
+            "type": "promptString",
+            "description": "Input directory containing JSON files",
+            "default": "../dataset/data"
+        },
+        {
+            "id": "startIndex",
+            "type": "promptString",
+            "description": "Start index of files to process",
+            "default": "0"
+        },
+        {
+            "id": "endIndex",
+            "type": "promptString",
+            "description": "End index of files to process",
+            "default": "1"
+        },
+        {
+            "id": "outputPath",
+            "type": "promptString",
+            "description": "Output path for GraphML file",
+            "default": "./output/graph.graphml"
+        },
+        {
+            "id": "nodeType",
+            "type": "pickString",
+            "description": "Node type",
+            "options": ["ARTIST", "TRACK"],
+            "default": "ARTIST"
+        }
+    ]
+} 

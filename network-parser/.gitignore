@@ -1,0 +1,17 @@
+# Generated GraphML files
+*.graphml
+
+# Generated text files
+*.txt
+
+# Output directory
+output/
+
+# IDE specific files
+.idea/
+.vscode/*
+!.vscode/launch.json
+*.iml
+
+# Build files
+target/ 
