@@ -1,6 +1,6 @@
 dataset
 dataset/**
-
+.idea/
 *.graphml
 edge_list.txt
 

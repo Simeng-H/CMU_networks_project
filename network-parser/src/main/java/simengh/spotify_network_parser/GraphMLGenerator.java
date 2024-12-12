@@ -30,8 +30,8 @@ public class GraphMLGenerator {
     private static final String DEFAULT_DATA_DIR = "/Users/simeng/local_dev/CMU_networks_project/dataset/data";
     private static final int DEFAULT_START_INDEX = 0;
     private static final int DEFAULT_END_INDEX = 1;  // Will process 2 files by default
-    private static final String DEFAULT_OUTPUT_PATH = "artist_graph.graphml";
-    private static final NodeType DEFAULT_NODE_TYPE = NodeType.ARTIST;
+    private static final String DEFAULT_OUTPUT_PATH = "track_graph.graphml";
+    private static final NodeType DEFAULT_NODE_TYPE = NodeType.TRACK;
 
     public static void main(String[] args) throws IOException {
         // Create command line options
